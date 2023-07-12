@@ -1,20 +1,15 @@
-/**
- * This is the Application object that will launch our application
- * @author Rob Kelley
- * @version 1.3
- * Lab1 
- * CS131ON
- */
+
 public class Application {
 
 	public static void main(String[] args) {
 		
-		NonPlayerCharacter npc = new NonPlayerCharacter();
-		//Uncomment the line below to ensure reportStructure() method works after you have written it.
-		System.out.println(npc.reportStructure());
+		BasketballTeam st1 = new BasketballTeam("Lakers", "Bear","Kobe Bryant");
 		
+		st1.setStats(10, 8, 22, 30, 56, 70);
 		
+		System.out.println(st1.toString());
+		
+	} // end main
+	
 
-	}//end main
-
-}//end class
+} // end class
